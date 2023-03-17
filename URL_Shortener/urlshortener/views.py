@@ -61,14 +61,11 @@ def custom_shortener(request):
 
 		custom_default = host + 'c/' + url_model_object.custom_url_name
 
-		print('CUSTOM TEST: ', custom_default)
-
 	context = {'custom_default': custom_default}
 	return render(request, 'urlshortener/custom.html', context)
 
 
 def custom_shortened(request, custom_name):
-	print('CUSTOM URL', custom_name)
 	if custom_name:
 		url = CustomUrl.objects.filter(custom_url_name=custom_name)
 		return redirect(url[0].original_url_name)
