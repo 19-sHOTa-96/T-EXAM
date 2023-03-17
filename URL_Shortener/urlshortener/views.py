@@ -70,10 +70,8 @@ def custom_shortener(request):
 def custom_shortened(request, custom_name):
 	print('CUSTOM URL', custom_name)
 	if custom_name:
-		print('INNER CUSTOM URL', custom_name)
 		url = CustomUrl.objects.filter(custom_url_name=custom_name)
 		return redirect(url[0].original_url_name)
-		return HttpResponse('<h1>Custom...</h1>')
 
 	else:
 		return redirect('custom_shortener')	
