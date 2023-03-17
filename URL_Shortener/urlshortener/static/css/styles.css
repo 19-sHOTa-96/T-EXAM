@@ -1,0 +1,64 @@
+.rc-hr {
+	width: 600px;
+	height: 0.1px;
+}
+
+.random-heading {
+	text-align: center;
+	color: blue;
+	font-size: 3rem;
+}
+
+.custom-heading {
+	text-align: center;
+	color: red;
+	font-size: 3rem;
+}
+
+.home-heading {
+	font-size: 3rem;
+}
+
+.random-link {
+	color: blue;
+	font-size: 1.5rem;
+	padding: 20px;
+}
+
+.custom-link {
+	color: red;
+	font-size: 1.5rem;
+	padding: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+input[type=url] {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input[type=text] {
+	width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input[type=submit] {
+/*  background-color: #04AA6D;*/
+  border: 1px solid gray;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+

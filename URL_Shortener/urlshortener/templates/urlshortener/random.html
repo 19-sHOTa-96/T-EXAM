@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Url shortener</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+	
+	<h1 class="random-heading">RANDOM SHORTENER</h1>
+	<br>
+	<hr class="rc-hr">
+	<center>
+		<br><br>
+		<form action="{% url 'random_shortener' %}" method="POST">
+			{% csrf_token %}
+			<label for="shortened-url">Random URL</label><br>
+			<input type="url" name="shortened-url" value="{{ random_default }}">
+			<br><br>
+			<input type="submit" values="Submit">
+			<br><br><br><br>
+			<hr class="rc-hr">
+			<br><br>
+			<a style="font-size: 1.2rem; text-decoration: none; color: blue" href="{% url 'home' %}">Back Home</a>
+		</form>	
+	</center>
+
+</body>
+</html>

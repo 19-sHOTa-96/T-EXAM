@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>URL SHORTENER</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+	<center>
+
+	<h1 class="home-heading">URL SHORTENER</h1>
+	<hr>
+
+	<h1>Choose</h1>
+
+	 <a class="custom-link" href="{% url 'custom_shortener' %}">Custom Shortener</a> | <a class="random-link" href="{% url 'random_shortener' %}">Random Shortener</a>
+
+	</center>
+
+</body>
+</html>
